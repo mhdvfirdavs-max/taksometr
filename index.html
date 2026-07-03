@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <title>Taksometr</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="header">
+            <div class="brand">
+                <span class="brand-dot" id="liveDot"></span>
+                <span class="brand-name">Taksometr</span>
+            </div>
+            <span class="status-label" id="statusLabel">To'xtatilgan</span>
+        </div>
+
+        <div class="main">
+            <div class="display-wrap">
+                <div class="fare-label">Yig'ilgan summa</div>
+                <div class="fare-value" id="fareValue">3 000<span class="fare-unit">so'm</span></div>
+
+                <div class="sub-row">
+                    <span>Vaqt: <b id="elapsedTime">00:00</b></span>
+                </div>
+            </div>
+
+            <div class="info-row">
+                <span>Keyingi yozuvgacha</span>
+                <span id="countdown">30s</span>
+            </div>
+        </div>
+
+        <div class="trip-summary" id="tripSummary">
+            <div class="title">Safar yakunlandi ✅</div>
+            <div class="amount" id="tripSummaryAmount">0 so'm</div>
+        </div>
+
+        <div class="controls">
+            <div class="controls-row">
+                <button id="startBtn">Boshlash</button>
+                <button id="stopBtn" disabled>To'xtatish</button>
+            </div>
+            <div class="arrived-row">
+                <button id="arrivedBtn" style="width:100%;">Manzilga yetib keldik</button>
+            </div>
+        </div>
+    </div>
+
+<script src="./app.js"></script>
+
+</body>
+
+</html>
